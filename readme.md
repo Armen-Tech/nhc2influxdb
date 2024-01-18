@@ -5,6 +5,8 @@
 
 This project sends all information from control unit 2 by Niko Home Control to Influxdb, and it's read by Grafana.
 
+To have a Niko Home Control 2 JWT token. This token must be updated every year. https://guide.niko.eu/display/SMNHCLV/Hobby+API
+
 ![schema](docs/schema.png)
 
 ## Quick start
