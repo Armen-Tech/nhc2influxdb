@@ -1,0 +1,14 @@
+#Environement
+.env
+env
+venv
+tmp.sh
+
+#Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Application
+ca-chain.cert.pem

@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nhc2influxdb:
+    image: 192.168.72.239:5000/nhc2/nhc2influx:latest
+    env_file:
+     - nhc2influx.env
+    depends_on:
+     - influxdb
+
+  grafana:
+    image: grafana/grafana-oss
+    container_name: grafana
+    restart: unless-stopped
+    user: '0'
+    ports:
+     - '3000:3000'
+    volumes:
+     - ./grafanalib:/var/lib/grafana
+     - ./grafaneetc:/etc/grafana
+
+  influxdb:
+    image: influxdb:latest
+    volumes:
+      - ./influxdb2:/var/lib/influxdb2:rw
+    ports:
+      - "8086:8086"

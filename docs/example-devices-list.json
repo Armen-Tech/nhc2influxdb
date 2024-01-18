@@ -1,0 +1,64 @@
+{
+    "Method": "devices.list",
+    "Params": [
+      {
+        "Devices": [
+          {
+            "Properties": [
+              {
+                "Brightness": "100"
+              },
+              {
+                "Status": "Off"
+              },
+              {
+                "Aligned": "True"
+              }
+            ],
+            "Name": "Dimmable lamp",
+            "Technology": "nikohomecontrol",
+            "Uuid": "21a967a1-676d-487b-b8d4-9736ef16d450",
+            "Identifier": "a4fafca1-bde4-4ad7-94f9-292c60c26bf7",
+            "PropertyDefinitions": [
+              {
+                "Brightness": {
+                  "Description": "Range(0.00,100.00,1.00)",
+                  "HasStatus": "true",
+                  "CanControl": "true"
+                }
+              },
+              {
+                "Status": {
+                  "Description": "Choice(On,Off)",
+                  "HasStatus": "true",
+                  "CanControl": "true"
+                }
+              },
+              {
+                "Aligned": {
+                  "Description": "Boolean",
+                  "HasStatus": "true",
+                  "CanControl": "false"
+                }
+              }
+            ],
+            "Online": "True",
+            "Model": "dimmer",
+            "Traits": [],
+            "Type": "action",
+            "Parameters": [
+              {
+                "LocationId": "7f62f934-83d3-4c66-b4bd-df7065cb1c6a"
+              },
+              {
+                "LocationName": "Demo"
+              },
+              {
+                "LocationIcon": "general"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
