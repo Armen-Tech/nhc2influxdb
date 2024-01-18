@@ -14,28 +14,26 @@ $ nano .nhc2influx.env
 ```
 NHC2_HOST="FP<MAC-Address>"
 NHC2_PASS="<JWT>"
-INFLUXDB_HOST="127.0.0.1"
+INFLUX_URL=http:/<host>:8086
+INFLUX_TOKEN=""
+INFLUX_ORG=""
+INFLUX_BUCKET=""
 ```
 ```
-$ docker run --env-file .nhc2influx.env mon_image
+$ docker run --env-file .nhc2influx.env armentech/nhc2influxdb:latest
 ```
 
 
 ## Install
 **Requirements**
-- influxdb 1.8
+- influxdb 1.8 or influxdb 2
 - grafana OSS
 
 ## Setup
 - Define environmental variables in docker-compose
 - Start docker-compose
-- 
 
-## Build
-```
-$ docker build -t nhc2influxdb:latest . 
-$ docker compose up -d
-```
+
 ## Developper
 
 ```
